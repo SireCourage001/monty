@@ -95,5 +95,6 @@ void pstr(stack_t **stack, unsigned int counter_numb);
 void rotl(stack_t **stack, unsigned int counter_numb);
 void rotr(stack_t **stack, unsigned int counter_numb);
 
+
 #endif
 
