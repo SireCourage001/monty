@@ -1,7 +1,7 @@
 #include "monty.h"
 
 /**
- * get_opcode_func - It handles the opcode function been passed
+ * get_opcode_func - Handles the opcode function passed
  *
  * Description: Checks if the opcode string is valid
  */
@@ -33,7 +33,7 @@ void get_opcode_func(void)
 	if (file_ptr->tokens[0][0] == '#')
 	{
 		handle_hash();
-		break;
+		return;
 	}
 	for (index_i = 0; opcodes[index_i].opcode != NULL; index_i++)
 	{
@@ -65,7 +65,7 @@ void invalid_instruction(void)
 }
 
 /**
- * fclose_file - Closes the file
+ * fclose_file - Closes the file.
  */
 
 void fclose_file(void)
@@ -78,7 +78,7 @@ void fclose_file(void)
 }
 
 /**
- * free_tokens - Frees all the tokenized string
+ * free_tokens - Frees all the tokenized string.
  */
 
 void free_tokens(void)
@@ -97,7 +97,7 @@ void free_tokens(void)
 }
 
 /**
- * free_file_ptr - Free the file_ptr the pointer to the struct
+ * free_file_ptr - Free the file_ptr the pointer to the struct.
  */
 
 void free_file_ptr(void)

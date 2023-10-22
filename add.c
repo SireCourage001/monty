@@ -24,7 +24,7 @@ int count_stacks(stack_t *head_stack)
 }
 
 /**
- * add - Adds the top two elements of the head_stack
+ * add - Adds the top 1st & 2nd elements of the head_stack
  * @head_stack: head_stack
  * @counter_numb: Line num of file to execute
  *
